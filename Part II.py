@@ -68,6 +68,7 @@ def a_star(graph, start, goal):
                 heapq.heappush(open_heap, (tentative_g + heuristic(neighbor), tentative_g, neighbor))
     raise ValueError("No path exists")
 
+
 if __name__ == "__main__":
     start, goal = "Seattle", "Miami"
     path, cost = a_star(graph, start, goal)
